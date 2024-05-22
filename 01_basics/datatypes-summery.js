@@ -34,3 +34,26 @@ const myFunction =  function() {
 }
 
 console.log(typeof myFunction);
+
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// Stack(Primitive) , Heap(Non-primitive)
+
+let nameOne = "rashid"
+let nameTwo = nameOne;
+nameTwo = "saad"
+
+console.log(nameOne);
+console.log(nameTwo);
+
+let userOne = {
+    email: "user@google.com",
+    city: "lahore"
+}
+
+let userTwo = userOne;
+
+userTwo.email = "rashid@gmail.com"
+
+console.log(userOne);
+console.log(userTwo);
